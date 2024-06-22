@@ -1,0 +1,29 @@
+function prasanth(){
+    
+   Document={"photos":"javasript"} 
+   
+}
+
+function ramu(docu)
+{
+    docu1 = "pan card"
+    console.log(docu)
+    shanthi(docu1)
+    
+}
+
+prasanth()
+
+function shanthi(docu1){
+    
+   if (docu ["photos"]!="javasript")
+   {
+       console.log("jai balaiah")
+       
+   }
+    
+    quantity= 5
+    price= 50
+    pan= quntity *price
+    
+}
