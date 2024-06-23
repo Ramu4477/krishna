@@ -1,0 +1,96 @@
+//---------------using FUNCTION approach----------------
+function ListOfTemples(godName){
+    if(godName == "saibaba"){
+        ListOfsaibabaTemples(godName)
+    }
+    else if(godName == "srinivasa"){
+         ListOfsrinivasaTemples(godName)
+    }
+    else if(godName == "krishna"){
+         ListOfkrishnaTemples(godName)
+    }
+}
+
+function ListOfsaibabaTemples(godName){
+    TemplesList1 = { 
+        "sridisaibabaTemple": "maharastra",
+        "pakirsaibabaTemple": "shiridi",
+        "saibabaTemple": "dommulur"
+    }
+    console.log("List of saibaba Temples",TemplesList1)
+}
+
+function ListOfsrinivasaTemples(godName){
+    TemplesList2 = { 
+        "balaji": "chikkatirupati",
+        "srinivasaTemple": "malleswaram",
+        "venkateswarluTemple": "tirupati"
+    }
+    console.log("List of srinivasa Temples",TemplesList2)
+}
+
+
+function ListOfkrishnaTemples(godName){
+    TemplesList3 = { 
+        "krishnaTemple": "dwarakadhish",
+        "gopal": "mathura",
+        "madhava": "matha udupi"
+    }
+    console.log("List of krishna Temples",TemplesList3)
+}
+
+ListOfTemples("krishna")
+ListOfTemples("srinivasa")
+ListOfTemples("saibaba")
+
+//------------------Using CLASS AND METHODS approach-----
+
+class ListTemples{
+    constructor(searchTemple){
+        this.temple1  = searchTemple
+         if(this.temple1 == "saibaba"){
+        this.ListOfsaibabaTemples1(this.temple1 )
+    }
+    else if(this.temple1 == "srinivasa"){
+         this.ListOfSrinivasaTemples1(this.temple1 )
+    }
+    else if(this.temple1 == "krishna"){
+         this.ListOfkrishnaTemples1(this.temple1 )
+      }  
+    }
+   
+     ListOfSrinivasaTemples1(godName){
+       let TemplesList22 = { 
+        "balajiTemple": "chikkatirupati",
+        "srinivasaTemple": "malleswaram",
+        "venkateswarluTemple": "tirupati"
+    }
+    console.log("List of srinivasa Temples",TemplesList22)
+ }
+ 
+ ListOfsaibabaTemples1(godName){
+       let TemplesList11 = { 
+        "sridisaibabaTemple": "maharastra",
+        "pakirsaibabaTemple": "shiridi",
+        "saibabaTemple": "dommulur"
+     }
+    console.log("List of saibaba Temples",TemplesList11)
+ }
+  ListOfkrishnaTemples1(godName){
+       let TemplesList33 = { 
+        "krishnaTemple": "dwarakadhish",
+        "gopal": "mathura",
+        "madhava": "matha udupi"
+     }
+    console.log("List of krishna Temples",TemplesList33)
+ }
+    
+}
+ListShiva = new ListTemples("srinivasa")
+ListGanesha = new ListTemples("saibaba")
+ListRaghavendra= new ListTemples("krishna")
+
+
+
+
+
